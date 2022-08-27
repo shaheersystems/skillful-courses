@@ -1,9 +1,9 @@
 import React from "react";
-import AppBar from "../components/AppBar";
+import Banner from "../components/Banner";
 function LandingPage() {
   return (
     <div>
-      <AppBar />
+      <Banner />
     </div>
   );
 }
