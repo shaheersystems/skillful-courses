@@ -1,24 +1,21 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
+import FeaturedCourse from "./FeaturedCourse";
+import LeftController from "./LeftController";
+import RightController from "./RightController";
 function SimpleCarousel() {
   return (
-    <div className="h-16 bg-gray-400">
-      <Carousel indicators={false}>
-        <div className="text-4xl font-semibold flex items-center justify-center bg-gray-800 text-white border border-gray-100 w-20">
-          1
-        </div>
-        <div className="text-4xl font-semibold flex items-center justify-center bg-gray-800 text-white border border-gray-100 w-20">
-          2
-        </div>
-        <div className="text-4xl font-semibold flex items-center justify-center bg-gray-800 text-white border border-gray-100 w-20">
-          3
-        </div>
-        <div className="text-4xl font-semibold flex items-center justify-center bg-gray-800 text-white border border-gray-100 w-20">
-          4
-        </div>
-        <div className="text-4xl font-semibold flex items-center justify-center bg-gray-800 text-white border border-gray-100 w-20">
-          5
-        </div>
+    <div className="h-96 mx-10 bg-gray-200">
+      <Carousel
+        slide={false}
+        leftControl={<LeftController />}
+        rightControl={<RightController />}
+      >
+        <FeaturedCourse />
+        <FeaturedCourse />
+        <FeaturedCourse />
+        <FeaturedCourse />
+        <FeaturedCourse />
       </Carousel>
     </div>
   );

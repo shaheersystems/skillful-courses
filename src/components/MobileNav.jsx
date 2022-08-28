@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function MobileNav() {
   return (
-    <div className="flex md:hidden items-center h-16 px-10 justify-between border-b border-gray-300">
+    <div className="flex sticky z-10 top-0 bg-white md:hidden items-center h-16 px-10 justify-between border-b border-gray-300">
       <div>
         <button>
           <svg
@@ -20,9 +20,11 @@ function MobileNav() {
         </button>
       </div>
       <div>
-        <h1 className="text-2xl">
-          Skillful<span className="text-green-500">.</span>{" "}
-        </h1>
+        <Link to="/">
+          <h1 className="text-2xl logo">
+            Skillful<span className="text-green-500">.</span>{" "}
+          </h1>
+        </Link>
       </div>
       <div>
         <button>
