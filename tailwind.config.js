@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -5,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+  },
+  colors: {
+    gray: colors.coolGray,
+    blue: colors.lightBlue,
+    red: colors.rose,
+    pink: colors.fuchsia,
   },
   plugins: [require("flowbite/plugin")],
 };

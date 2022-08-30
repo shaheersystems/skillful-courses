@@ -1,3 +1,4 @@
+import { Rating } from "flowbite-react";
 import React from "react";
 import ftImage from "./featured-img.jpg";
 function FeaturedCourse() {
@@ -21,6 +22,18 @@ function FeaturedCourse() {
             Unique Features
           </p>
           <p className="text-sm text-gray-600 pt-3">By Muhammad Shaheer</p>
+          <div className="pt-4">
+            <Rating>
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star />
+              <Rating.Star filled={false} />
+              <p className="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+                4.95 out of 5
+              </p>
+            </Rating>
+          </div>
           <p className="text-sm text-gray-600 pt-3">
             33 total hours • 164 lectures • All Levels
           </p>
