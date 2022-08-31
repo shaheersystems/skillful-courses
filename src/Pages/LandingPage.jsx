@@ -20,7 +20,7 @@ function LandingPage() {
         <CourseCard />
       </div>
       <Head text="Topics Recommended for you" />
-      <div className="flex px-10 h-36 flex-wrap items-center justify-center lg:justify-between gap-2">
+      <div className="flex max-h-fit px-10  flex-wrap items-center justify-center lg:justify-between gap-2">
         <CategoryTag category="ReactJs" />
         <CategoryTag category="VueJs" />
         <CategoryTag category="React Native" />

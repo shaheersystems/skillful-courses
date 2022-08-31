@@ -14,7 +14,7 @@ function FeaturedCourse() {
       </div>
       <div className="border flex-1 p-6 flex h-full flex-col justify-between bg-white">
         <div>
-          <h1 className="text-3xl font-bold font-serif pb-3">
+          <h1 className="text-xl sm:text-3xl font-bold font-serif pb-3">
             Mega WordPress Elementor Bundled Course: 5 Courses included
           </h1>
           <p>
