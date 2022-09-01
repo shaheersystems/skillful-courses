@@ -5,6 +5,7 @@ import SimpleCarousel from "../components/SimpleCarousel";
 import CourseCard from "../components/CourseCard";
 import Head from "../components/Head";
 import CategoryTag from "../components/CategoryTag";
+import ReviewCard from "../components/ReviewCard";
 function LandingPage() {
   return (
     <div>
@@ -18,6 +19,15 @@ function LandingPage() {
         <CourseCard />
         <CourseCard />
         <CourseCard />
+      </div>
+      <Head text="What our students think about us" />
+      <div className="px-10 max-h-fit flex flex-wrap gap-4 justify-between">
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
       </div>
       <Head text="Topics Recommended for you" />
       <div className="flex max-h-fit px-10  flex-wrap items-center justify-center lg:justify-between gap-2">
